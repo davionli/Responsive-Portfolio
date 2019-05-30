@@ -10,6 +10,8 @@ body{
 header{
     background-color: #ffffff;
     display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
     /* width: 100%; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0 15% 0 15%;
@@ -41,11 +43,19 @@ a{
     color: #ffffff;
     background-color: #4aaaa5;
 }
+#nametitle{
+    float: left;
+}
+.navbarcontainer{
+    justify-content: end;
+    /* position: absolute; */
+    right: 15%;
+    margin-left: auto;
+}
 .navbar{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    right: 15%;
+
 }
 .nav_items{
     padding: 0 0.6em 0 0.6em;
@@ -81,4 +91,32 @@ a{
 }
 #copyright{
     color: white;
+}
+@media screen and (max-width: 980px) {
+ 
+}
+
+@media screen and (max-width: 768px){
+   
+}
+
+@media screen and (max-width: 640px) {
+    
+    .nametitle{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .navbarcontainer{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-left: 15%;
+    }
+    .navbar{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    
 }
